@@ -23,7 +23,7 @@ body{
     justify-content: space-between;
     grid-row: inherit;
     grid-row: 1;
-    background: bisque;
+    background: rgb(133, 255, 174);
 }
 
 .header-nav {

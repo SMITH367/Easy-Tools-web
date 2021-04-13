@@ -10,6 +10,12 @@
     
 
 }
+h6{
+    font-weight: 200;
+    font-style: italic;
+    background: rgb(83, 83, 83);
+    color:#fff;
+}
 
 .keyword{
     color: #00458b;
@@ -26,5 +32,5 @@
     color:#b54248;
 }
 .puntuation{
-   color: #2c2c2c;
+   color: #585858;
 }
