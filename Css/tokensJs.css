@@ -1,0 +1,30 @@
+
+
+
+.coding {
+
+    background: #eee;
+    border-left: 5px solid aqua;
+    border-radius: 10px;
+    padding:7px;
+    
+
+}
+
+.keyword{
+    color: #00458b;
+}
+
+.function {
+    color: #b54248;
+
+}
+.method{
+    color: #007e26;
+}
+.method2{
+    color:#b54248;
+}
+.puntuation{
+   color: #2c2c2c;
+}

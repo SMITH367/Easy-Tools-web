@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/responsive.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+    <link rel="stylesheet" href="../Css/tokensJs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./Sources/etjslogo.png" type="image/x-icon">
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Sources/etjslogo.png" type="image/x-icon">
 
 
     <title>Easy Tools JS</title>
+
 </head>
 
 
 <body>
-
     <div class="container">
 
         <header class="header">
@@ -34,7 +35,6 @@
                     <a href="">
                         <li class="header-nav-element">Inicio</li>
                     </a>
-
                     <a href="">
                         <li class="header-nav-element">Descargar</li>
                     </a>
@@ -44,9 +44,6 @@
                     </a>
                     <a href="">
                         <li class="header-nav-element">Metodos</li>
-                    </a>
-                    <a href="">
-                        <li class="header-nav-element">Documentacion</li>
                     </a>
                 </ul>
             </nav>
@@ -58,12 +55,12 @@
             <article>
 
                 <a href="">
-                    <p>Metodos</p>
+                    <p>Metodos y funciones</p>
                 </a>
 
                 <ul class="methods">
 
-                    <a href="">
+                    <a href="./Pages/ofArray.html">
                         <li class="methods-element">ofArray</li>
                     </a>
 
@@ -97,29 +94,228 @@
                     <a href="">
                         <li class="methods-element">linkedList</li>
                     </a>
+                    <a href="">
+                        <li class="methods-element">generateString</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">binarySearch</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">bubbleSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">quickSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">typeofMethod</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">functionTest</li>
+                    </a>
 
 
                 </ul>
             </article>
             <article>
+                <h2>El objeto ofArray </h2>
+                <p>El objeto OfArray, consiste en un objeto con metodos para manipulacion de arreglos, con herramientas
+                    y utilidades realcionadas a esta estructura de datos en especifico </p>
+                <h3>Metodos</h3>
+                <div class="method-container">
+                    <p>
+                        <h6>ofArray.adition:</h4>
+
+                            este metodo, recibe como parametro un arreglo y calcula la suma de todos los elementos de
+                            este,
+                            siempre y cuando sean elementos de tipo numerico de la siguiente forma.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">adition</span><span>([2,3,6])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 11 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="method-container">
+                    <p>
+
+                        <h6>ofArray.product:</h6>
+
+                        este metodo, recibe como parametro un arreglo y calcula el producto de todos los elementos de
+                        este,
+                        siempre y cuando sean elementos de tipo numerico de la siguiente forma.
+                    </p>
 
 
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">product</span><span>([4,5,7])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 140 </span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="method-container">
+                    <p>
+
+                        <h6>ofArray.average:</h6>
+
+                        este metodo, recibe como parametro un arreglo y calcula el promedio de todos los elementos de
+                        este,
+                        siempre y cuando sean elementos de tipo numerico de la siguiente forma.
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">average</span><span>([2,3,4])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 3 </span>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="method-container">
+                    <p>
+                        <h6>ofArray.generateArray:</h4>
+
+                            este metodo, recibe como parametro un numero y genera un array con esa n cantidad de
+                            elementos los cuales son numeros aleatorios.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">generateArray</span><span>(4)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> [432,756,53,2345] </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="method-container">
+                    <p>
+                        <h6>ofArray.type:</h4>
+
+                            este metodo, recibe como parametro un arreglo, evalua cada uno de los elementos y dice que
+                            tipo de arreglo es, esto inspirado en leguajes de tipado estatico como java, puede retornar
+                            6 tipos de valores en forma de string:
+                            <ul>
+                                <li>number</li>
+                                <li>string</li>
+                                <li>boolean</li>
+                                <li>object</li>
+                                <li>mixed (En caso de que uno o mas elementos de distintos tipos)</li>
+                                <li>emply (En caso de que este vacio)</li>
+                            </ul>
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">type</span><span>([2,23,532.34,213])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> "number" <br> debido a que
+                                todos los
+                                elementos son de tipo numerico </span>
+                        </p>
+
+                    </div>
+                    <br>
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">type</span><span>(["juan","rewr","543dd"])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> "string" <br> debido a que
+                                todos los
+                                elementos son de tipo cadena </span>
+                        </p>
+
+                    </div>
+                    <br>
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">type</span><span>([54,"auto","gato",true,[3,"holamundo"]])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> "mixed" <br> debido a que hay
+                                elementos de distintos tipos</span>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="method-container">
+                    <p>
+
+                        <h6>ofArray.arrayTObject:</h6>
+
+                        este metodo, recibe como parametro un arreglo y devuelve un objeto, del cual las key son los
+                        indices del array y los values los valores que tenia inicialmente la poscision del array
+                    </p>
+
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
+                                    class="method">arrayTObject</span><span>(["hola mundo",231,true,9978,"txt"])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br>  {
+                                <br>
+                                0: "hola mundo", <br>
+                                1: 231, <br>
+                                2: true, <br>
+                                3: 9978 <br>
+                                4: "txt"
+                                <br>
+                            } 
+                        </span>
+                        </p>
+
+                    </div>
+                </div>
 
 
             </article>
 
         </section>
 
-
         <footer>
-        <p>sadas</p>
+
+            <p>Copyright © Actualización 2021 Brayan Puentes Ruiz. Derechos Reservados. <br>
+                Easy Tolls Js V1.0 </p>
+
         </footer>
-
-
     </div>
-   
-    <script src="Js/main.js"></script>
+
 
 </body>
+
 
 </html>

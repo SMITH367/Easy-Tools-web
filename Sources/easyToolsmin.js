@@ -125,7 +125,7 @@ let currentNode=this.head;while(currentNode){if(currentNode.value===value){retur
 currentNode=currentNode.next}}
 deleteHead(){if(this.head){if(this.head.next){const secondNode=this.head.next;this.head=secondNode}else{this.head=null}}}
 viewElements(){let currentNode=this.head;while(currentNode){console.log(currentNode.value);currentNode=currentNode.next}}}
-const quicksort=(array)=>{if(array.length<=1){return array}
+const quickSort=(array)=>{if(array.length<=1){return array}
 var index=array[0];var left=[];var right=[];for(var i=1;i<array.length;i++){if(array[i]<index){left.push(array[i])}else{right.push(array[i])}}
 return quicksort(left).concat(index,quicksort(right))};const bubbleSort=(array)=>{let sortVar;for(let i=0;i<array.length;i++){for(let j=0;j<array.length-i;j++){if(array[j]>array[j+1]){sortVar=array[j];array[j]=array[j+1];array[j+1]=sortVar}}}
 return array}
@@ -135,3 +135,24 @@ const ofArray=new CalcArray();const areaOf=new Areas();const perimeterOf=new Per
 
 
 
+export {
+
+    ofArray,
+    areaOf,
+    perimeterOf,
+    ofConjunts,
+    geometryAnalitic,
+    equations,
+    statistic,
+    formTools,
+    stack,
+    queue,
+    linkedList,
+    generateString,
+    binarySearch,
+    bubbleSort,
+    quickSort,
+    typeofMethod,
+    functionTest
+
+};
