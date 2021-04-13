@@ -1,0 +1,35 @@
+
+@media (max-width: 700px) {
+    .icon {
+        display: none;
+    }
+
+    .init {
+        visibility: visible;
+        font-style: oblique;
+        font-size: larger;
+        font-kerning: inherit;
+    }
+
+    .hero img {
+        height: 300px;
+    }
+
+    .methods {
+        display: none;
+    }
+
+    .methods-element {
+        display: none;
+    }
+
+    .about-et {
+        width: 100%;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+
+    }
+
+}
