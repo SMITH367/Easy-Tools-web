@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+    <link rel="stylesheet" href="../Css/tokensJs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Sources/etjslogo.png" type="image/x-icon">
+    <title>Easy Tools JS</title>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="icon">
+                <a href="../index.html">  <img src="../Sources/etjslogo.png" alt="" srcset="" width="50%">
+
+                </a>
+              
+
+            </div>
+            <p class="init">Easy Tools JS</p>
+
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+
+                    <a href="../index.html">
+                        <li class="header-nav-element">Inicio</li>
+                    </a>
+                    <a href="">
+                        <li class="header-nav-element">Descargar</li>
+                    </a>
+
+                    <a href="">
+                        <li class="header-nav-element">Sobre ET</li>
+                    </a>
+                    <a href="">
+                        <li class="header-nav-element">Metodos</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <a href="#" id="js_up" class="to-top">
+
+            <i class="fa fa-rocket" aria-hidden="true">   ^   </i>
+        </a>
+
+
+
+        <section class="main">
+            <article>
+
+                <a href="">
+                    <p>Metodos y funciones</p>
+                </a>
+
+                <ul class="methods">
+
+                    <a href="ofArray.html">
+                        <li class="methods-element">ofArray</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">areaOf</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">perimeterOf</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">ofConjunts</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">statistic</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">geometryAnalitic</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">formTools</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">stack</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">queue</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">linkedList</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">generateString</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">binarySearch</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">bubbleSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">quickSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">typeofMethod</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">functionTest</li>
+                    </a>
+
+
+                </ul>
+            </article>
+            <article>
+                <h2>El objeto areaOf </h2>
+                <p>El objeto areaOf, consiste en un objeto con metodos para el calculo de areas de figuras planas y
+                    algunos solidos </p>
+                <h3>Metodos</h3>
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.square:</h6>
+
+                            Este metodo, recibe como parametro el valor del lado del un cuadrado y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">square</span><span>(4)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 16 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.circle:</h6>
+
+                            Este metodo, recibe como parametro el valor del radio de un circulo y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">circle</span><span>(6)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 113.097 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.triangule:</h6>
+
+                            Este metodo, recibe como parametros la base y la altura de un triangulo y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">triangule</span><span>(4,7)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 14 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.rectangule:</h6>
+
+                            Este metodo, recibe como parametros la base y la altura de un rectangulo y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">rectangule</span><span>(3,5)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 15 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.rombo:</h6>
+
+                            Este metodo, recibe como parametros la mayor diagonal y la menor diagonal de un rombo y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">rombo</span><span>(9,12)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 54 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.trapecio:</h6>
+
+                            Este metodo, recibe como parametros la base mayor y la base menor y la altura de un trapecio y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">trapecio</span><span>(4,7,8)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 32 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.sphere:</h6>
+
+                            Este metodo, recibe como parametro el radio de una esfera y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">sphere</span><span>(9)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 1017.876 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.cube:</h6>
+
+                            Este metodo, recibe como parametro el lado de un cubo y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">cube</span><span>(13)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 1014 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="method-container">
+                    <p>
+                        <h6>areaOf.tetrahedron:</h6>
+
+                            Este metodo, recibe como parametro la arista de un tetahedro y calcula el area en
+                            base a este aplicando la formula.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">areaOf</span><span>.</span><span
+                                    class="method">cube</span><span>(14)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> 339.481 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+
+            <p>Copyright © Actualización 2021 Brayan Puentes Ruiz. Derechos Reservados. <br>
+                Easy Tolls Js V1.0 </p>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+</body>
+
+
+</html>

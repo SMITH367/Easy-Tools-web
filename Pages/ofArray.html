@@ -12,7 +12,6 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Sources/etjslogo.png" type="image/x-icon">
 
-
     <title>Easy Tools JS</title>
 
 </head>
@@ -24,8 +23,8 @@
         <header class="header">
 
             <div class="icon">
-              <a href="../index.html"> <img src="../Sources/etjslogo.png" alt="" srcset="" width="50%">
-              </a> 
+                <a href="../index.html"> <img src="../Sources/etjslogo.png" alt="" srcset="" width="50%">
+                </a>
             </div>
             <p class="init">Easy Tools JS</p>
 
@@ -50,6 +49,10 @@
         </header>
 
 
+        <a href="#" id="js_up" class="to-top">
+
+            <i class="fa fa-rocket" aria-hidden="true">   ^   </i>
+        </a>
 
         <section class="main">
             <article>
@@ -60,11 +63,11 @@
 
                 <ul class="methods">
 
-                    <a href="ofArray.html">
+                    <a href="">
                         <li class="methods-element">ofArray</li>
                     </a>
 
-                    <a href="">
+                    <a href="areaOf.html">
                         <li class="methods-element">areaOf</li>
                     </a>
 
@@ -189,7 +192,7 @@
                     </div>
 
 
-                </div>
+                </div style="width:100%;">
 
                 <div class="method-container">
                     <p>
@@ -199,6 +202,7 @@
                             elementos los cuales son numeros aleatorios.
 
                     </p>
+
 
                     <div class="coding">
                         <p>
@@ -214,62 +218,72 @@
                 </div>
 
                 <div class="method-container">
+
                     <p>
                         <h6>ofArray.type:</h6>
 
-                            este metodo, recibe como parametro un arreglo, evalua cada uno de los elementos y dice que
-                            tipo de arreglo es, esto inspirado en leguajes de tipado estatico como java, puede retornar
-                            6 tipos de valores en forma de string:
-                            <ul>
-                                <li>number</li>
-                                <li>string</li>
-                                <li>boolean</li>
-                                <li>object</li>
-                                <li>mixed (En caso de que uno o mas elementos de distintos tipos)</li>
-                                <li>emply (En caso de que este vacio)</li>
-                            </ul>
+                        este metodo, recibe como parametro un arreglo, evalua cada uno de los elementos y dice que
+                        tipo de arreglo retorna
+                        6 tipos de valores en forma de string:
+                        <ul>
+                            <li>number</li>
+                            <li>string</li>
+                            <li>boolean</li>
+                            <li>object</li>
+                            <li>mixed (En caso de que uno o mas elementos de distintos tipos)</li>
+                            <li>emply (En caso de que este vacio)</li>
+                        </ul>
 
                     </p>
+                    <div>
 
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
-                                    class="method">type</span><span>([2,23,532.34,213])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> "number" <br> debido a que
-                                todos los
-                                elementos son de tipo numerico </span>
-                        </p>
+                        <div class="coding">
+                            <p>
+                                <span class="keyword">console</span><span>.</span><span
+                                    class="method2">log</span><span>(<span
+                                        class="keyword">ofArray</span><span>.</span><span
+                                        class="method">type</span><span>([2,23,90,80.8])</span>)</span>
+                                <br>
+                                <span class="puntuation">//La salida por consola seria: <br> "number" <br> debido a que
+                                    todos los
+                                    elementos son de tipo numerico </span>
+                            </p>
 
-                    </div>
-                    <br>
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
-                                    class="method">type</span><span>(["juan","rewr","543dd"])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> "string" <br> debido a que
-                                todos los
-                                elementos son de tipo cadena </span>
-                        </p>
+                        </div>
+                        <p>Caso de ejemplo 2 </p>
 
-                    </div>
-                    <br>
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
-                                    class="method">type</span><span>([54,"auto","gato",true,[3,"holamundo"]])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> "mixed" <br> debido a que hay
-                                elementos de distintos tipos</span>
-                        </p>
+                        <div class="coding">
+                            <p>
+                                <span class="keyword">console</span><span>.</span><span
+                                    class="method2">log</span><span>(<span
+                                        class="keyword">ofArray</span><span>.</span><span
+                                        class="method">type</span><span>(["juan","as","gris"])</span>)</span>
+                                <br>
+                                <span class="puntuation">//La salida por consola seria: <br> "string" <br>debido a que
+                                    todos los
+                                    elementos son de tipo cadena</span>
+                            </p>
+
+                        </div>
+                        <p>Case 2 </p>
+                        <div class="coding">
+                            <p>
+                                <span class="keyword">console</span><span>.</span><span
+                                    class="method2">log</span><span>(<span
+                                        class="keyword">ofArray</span><span>.</span><span
+                                        class="method">type</span><span>([54,"auto",true])</span>)</span>
+                                <br>
+                                <span class="puntuation">//La salida por consola seria: <br> "mixed" <br> debido a que
+                                    uno o mas elementos son de distinto tipo</span>
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
+
+
                 <div class="method-container">
                     <p>
 
@@ -284,18 +298,19 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span class="keyword">ofArray</span><span>.</span><span
-                                    class="method">arrayTObject</span><span>(["hola mundo",231,true,9978,"txt"])</span>)</span>
+                                    class="method">arrayTObject</span><span>(["hola
+                                    mundo",231,true,9978,"txt"])</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br>  {
+                            <span class="puntuation">//La salida por consola seria: <br> {
                                 <br>
                                 '0': "hola mundo", <br>
                                 '1': 231, <br>
                                 '2': true, <br>
-                                '3': 9978 <br>
+                                '3': 9978, <br>
                                 '4': "txt"
                                 <br>
-                            } 
-                        </span>
+                                }
+                            </span>
                         </p>
 
                     </div>
@@ -314,7 +329,7 @@
         </footer>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 
 

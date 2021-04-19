@@ -1,5 +1,9 @@
 
 @media (max-width: 700px) {
+   
+
+    
+   
     .icon {
         display: none;
     }
@@ -24,7 +28,7 @@
     }
 
     .about-et {
-        width: 100%;
+        width: 99%;
     }
 
     .main {
