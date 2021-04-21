@@ -21,11 +21,13 @@
 
         <header class="header">
 
+
             <div class="icon">
 
                 <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
 
             </div>
+
             <p class="init">Easy Tools JS</p>
 
             <nav class="header-nav">
@@ -54,7 +56,6 @@
             <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
         </a>
 
-
         <section class="main">
             <article class="nav-methods">
 
@@ -68,7 +69,7 @@
                         <li class="methods-element">ofArray</li>
                     </a>
 
-                    <a href="">
+                    <a href="areaOf.html">
                         <li class="methods-element">areaOf</li>
                     </a>
 
@@ -122,18 +123,18 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto perimeterOf </h2>
-                <p>El objeto perimeterOf, consiste en un objeto con metodos para el calculo de perimetros de cualquier
-                    poligono y
-                    algunos solidos</p>
+                <h2>El objeto geometryCart </h2>
+                <p>El objeto geometryCart, es un conjunto de metodos para desarollar las pricipales operaciones y
+                    calculos de la geometria analitica</p>
                 <h3>Metodos</h3>
+
+
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.square:</h6>
+                        <h6>geometryCart.equationR:</h6>
 
-                            Este metodo, recibe como parametro el lado de un cuadrado y calcula su perimetro aplicando
-                            la
-                            formula
+                        Este metodo, recibe como parametros los 4 puntos x1,x2,y1,y2 del plano carteseano y calcula la
+                        ecuacion de la recta en base a estos puntos.
 
                     </p>
 
@@ -141,10 +142,10 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">square</span><span>(11)</span>)</span>
+                                    class="keyword">geometryCart</span><span>.</span><span
+                                    class="method">equationR</span><span>(2,3,7,6)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 44 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> y=-1x+9  </span>
                         </p>
 
                     </div>
@@ -152,12 +153,10 @@
 
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.triangule:</h6>
+                        <h6>geometryCart.distance:</h6>
 
-                            Este metodo, recibe como parametros los 3 lados de un triangulo y calcula su perimetro
-                            aplicando
-                            la
-                            formula
+                        Este metodo, recibe como parametros los 4 puntos x1,x2,y1,y2 del plano carteseano y calcula la
+                        distancia entre 2 puntos.
 
                     </p>
 
@@ -165,10 +164,10 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">triangule</span><span>(4,3,5)</span>)</span>
+                                    class="keyword">geometryCart</span><span>.</span><span
+                                    class="method">distance</span><span>(2,4,3,5)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 12 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> 2.82  </span>
                         </p>
 
                     </div>
@@ -176,11 +175,10 @@
 
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.circle:</h6>
+                        <h6>geometryCart.midPoint:</h6>
 
-                            Este metodo, recibe como parametro el radio de un circulo y calcula su perimetro aplicando
-                            la
-                            formula
+                        Este metodo, recibe como parametros los 4 puntos x1,x2,y1,y2 del plano carteseano y calcula la
+                        el punto medio entre 2 puntos, devolviendo las coordenadas de dicho punto.
 
                     </p>
 
@@ -188,10 +186,10 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">circle</span><span>(17)</span>)</span>
+                                    class="keyword">geometryCart</span><span>.</span><span
+                                    class="method">midPoint</span><span>(3,4,5,6)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 106.814 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> [3.5 , 5.5]  </span>
                         </p>
 
                     </div>
@@ -199,12 +197,10 @@
 
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.rectangule:</h6>
+                        <h6>geometryCart.pending:</h6>
 
-                            Este metodo, recibe como parametros la base y la altura de un rectangulo y calcula su
-                            perimetro aplicando
-                            la
-                            formula
+                        Este metodo, recibe como parametros los 4 puntos x1,x2,y1,y2 del plano carteseano y calcula la
+                        la pendiente de la recta.
 
                     </p>
 
@@ -212,86 +208,14 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">rectangule</span><span>(7,6)</span>)</span>
+                                    class="keyword">geometryCart</span><span>.</span><span
+                                    class="method">pending</span><span>(4,7,11,5)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 26 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> 5.3  </span>
                         </p>
 
                     </div>
                 </div>
-
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.cube:</h6>
-
-                            Este metodo, recibe como parametros la altura, el largo y el ancho y calcula su perimetro
-                            aplicando
-                            la
-                            formula
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">cube</span><span>(11,5,9)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 100 </span>
-                        </p>
-
-                    </div>
-                </div>
-
-
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.shepere:</h6>
-
-                            Este metodo, recibe como parametro el radio de una esfera y calcula su perimetro aplicando
-                            la
-                            formula
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">shepere</span><span>(9)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 56.548 </span>
-                        </p>
-c
-                    </div>
-                </div>
-
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.nAgono:</h6>
-
-                            Este metodo calcula el perimetro de cualquier poligono, recibe como parametros un array con
-                            los diferentes lados del poligono, y otro el cual es el numero de aristas del poligono, solo
-                            acepta poligonos mayores a 4 lados, ya sean regulares o irregulares.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">nAgono</span><span>([5,6,5,6],4)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 22 </span>
-                        </p>
-
-                    </div>
-                </div>
-            
             </article>
 
 
@@ -304,8 +228,8 @@ c
 
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 
 

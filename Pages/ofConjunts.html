@@ -21,11 +21,13 @@
 
         <header class="header">
 
+
             <div class="icon">
 
                 <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
 
             </div>
+
             <p class="init">Easy Tools JS</p>
 
             <nav class="header-nav">
@@ -48,7 +50,6 @@
             </nav>
         </header>
 
-
         <a href="#" id="js_up" class="to-top">
 
             <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
@@ -64,7 +65,7 @@
 
                 <ul class="methods">
 
-                    <a href="ofArray.html">
+                    <a href=".ofArray.html">
                         <li class="methods-element">ofArray</li>
                     </a>
 
@@ -122,18 +123,19 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto perimeterOf </h2>
-                <p>El objeto perimeterOf, consiste en un objeto con metodos para el calculo de perimetros de cualquier
-                    poligono y
-                    algunos solidos</p>
+                <h2>El objeto ofConjunts </h2>
+                <p>Este objeto es un conjunto de herramientas para operar con conjuntos y hacer sus respectivas
+                    operaciones, manjenado los conjuntos en forma de arreglos</p>
                 <h3>Metodos</h3>
+
+
+
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.square:</h6>
+                        <h6>ofConjunts.union:</h6>
 
-                            Este metodo, recibe como parametro el lado de un cuadrado y calcula su perimetro aplicando
-                            la
-                            formula
+                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
+                            la operacion de union de conjuntos y devuelve un arreglo con el conjunto resultante.
 
                     </p>
 
@@ -141,23 +143,23 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">square</span><span>(11)</span>)</span>
+                                    class="keyword">ofConjunts</span><span>.</span><span
+                                    class="method">union</span><span>([2,"hd"],[true,"23",9])</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 44 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> [2,"hd",true,"23",9] </span>
                         </p>
 
                     </div>
                 </div>
 
+
+
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.triangule:</h6>
+                        <h6>ofConjunts.intersection:</h6>
 
-                            Este metodo, recibe como parametros los 3 lados de un triangulo y calcula su perimetro
-                            aplicando
-                            la
-                            formula
+                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
+                            la operacion de interseccion de conjuntos y devuelve un arreglo con el conjunto resultante.
 
                     </p>
 
@@ -165,10 +167,10 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">triangule</span><span>(4,3,5)</span>)</span>
+                                    class="keyword">ofConjunts</span><span>.</span><span
+                                    class="method">union</span><span>([23,true,8],[true,8,"jaj"])</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 12 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> [true,8] </span>
                         </p>
 
                     </div>
@@ -176,11 +178,10 @@
 
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.circle:</h6>
+                        <h6>ofConjunts.diference:</h6>
 
-                            Este metodo, recibe como parametro el radio de un circulo y calcula su perimetro aplicando
-                            la
-                            formula
+                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
+                            la operacion de diferencia de conjuntos y devuelve un arreglo con el conjunto resultante.
 
                     </p>
 
@@ -188,10 +189,31 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">circle</span><span>(17)</span>)</span>
+                                    class="keyword">ofConjunts</span><span>.</span><span
+                                    class="method">diference</span><span>(["a",r,"q"],[true,"as","r"])</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 106.814 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> [ 'a', 'q' ]</span>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="method-container">
+                    <p>
+                        <h6>ofConjunts.simetricDiference:</h6>
+
+                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
+                            la operacion de diferencia simetrica de conjuntos y devuelve un arreglo con el conjunto resultante.
+
+                    </p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="keyword">ofConjunts</span><span>.</span><span
+                                    class="method">simetricDiference</span><span>( <br> [2,"bt","jak"],[21,"bt",true])</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: [ 2, 'jak', 21, true ]</span>
                         </p>
 
                     </div>
@@ -199,12 +221,10 @@
 
                 <div class="method-container">
                     <p>
-                        <h6>perimeterOf.rectangule:</h6>
+                        <h6>ofConjunts.complement:</h6>
 
-                            Este metodo, recibe como parametros la base y la altura de un rectangulo y calcula su
-                            perimetro aplicando
-                            la
-                            formula
+                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
+                            la operacion de complemento de conjuntos y devuelve un arreglo con el conjunto resultante.
 
                     </p>
 
@@ -212,88 +232,18 @@
                         <p>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">rectangule</span><span>(7,6)</span>)</span>
+                                    class="keyword">ofConjunts</span><span>.</span><span
+                                    class="method">complement</span><span>( <br> [1,"cd",true,"a"],["f",true,"ai",false])</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 26 </span>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.cube:</h6>
-
-                            Este metodo, recibe como parametros la altura, el largo y el ancho y calcula su perimetro
-                            aplicando
-                            la
-                            formula
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">cube</span><span>(11,5,9)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 100 </span>
+                            <span class="puntuation">//La salida por consola seria: [ 1, 'cd', 'a' ]</span>
                         </p>
 
                     </div>
                 </div>
 
 
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.shepere:</h6>
 
-                            Este metodo, recibe como parametro el radio de una esfera y calcula su perimetro aplicando
-                            la
-                            formula
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">shepere</span><span>(9)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 56.548 </span>
-                        </p>
-c
-                    </div>
-                </div>
-
-                <div class="method-container">
-                    <p>
-                        <h6>perimeterOf.nAgono:</h6>
-
-                            Este metodo calcula el perimetro de cualquier poligono, recibe como parametros un array con
-                            los diferentes lados del poligono, y otro el cual es el numero de aristas del poligono, solo
-                            acepta poligonos mayores a 4 lados, ya sean regulares o irregulares.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">perimeterOf</span><span>.</span><span
-                                    class="method">nAgono</span><span>([5,6,5,6],4)</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> 22 </span>
-                        </p>
-
-                    </div>
-                </div>
-            
             </article>
-
 
         </section>
 
@@ -304,8 +254,8 @@ c
 
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 
 
