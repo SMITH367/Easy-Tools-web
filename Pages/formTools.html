@@ -50,11 +50,11 @@
             </nav>
         </header>
 
+
         <a href="#" id="js_up" class="to-top">
 
             <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
         </a>
-
 
         <section class="main">
             <article class="nav-methods">
@@ -65,11 +65,11 @@
 
                 <ul class="methods">
 
-                    <a href=".ofArray.html">
+                    <a href="ofArray.html">
                         <li class="methods-element">ofArray</li>
                     </a>
 
-                    <a href="">
+                    <a href="areaOf.html">
                         <li class="methods-element">areaOf</li>
                     </a>
 
@@ -127,136 +127,158 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto ofConjunts </h2>
-                <p>Este objeto es un conjunto de herramientas para operar con conjuntos y hacer sus respectivas
-                    operaciones, manjenado los conjuntos en forma de arreglos</p>
+                <h2>El objeto forms </h2>
+                <p>El objeto forms es un conjunto de funcionalidades para validar informacion de formularios y
+                    verificar si efectivamente han sido ingresadas como el programa lo espera, contiene la gran mayoria
+                    de herramientas necesarias para esta area.</p>
                 <h3>Metodos</h3>
 
-
-
                 <div class="method-container">
                     <p>
-                        <h6>ofConjunts.union:</h6>
+                        <h6>forms.email:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de union de conjuntos y devuelve un arreglo con el conjunto resultante.
-
+                        Este metodo, recibe como parametro un string y valida si de manera general este cuenta con la
+                        estructura de un email, si es asi, retorna true, si no retornara undefined o false
                     </p>
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">union</span><span>([2,"hd"],[true,"23",9])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">email</span><span>("example@do.ne")</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> [2,"hd",true,"23",9] </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> true </span>
                         </p>
 
                     </div>
-                </div>
+                    <p>Caso de ejemplo 2</p>
 
-
-
-                <div class="method-container">
-                    <p>
-                        <h6>ofConjunts.intersection:</h6>
-
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de interseccion de conjuntos y devuelve un arreglo con el conjunto resultante.
-
-                    </p>
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">union</span><span>([23,true,8],[true,8,"jaj"])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">email</span><span>("hola.sda")</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> [true,8] </span>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="method-container">
-                    <p>
-                        <h6>ofConjunts.diference:</h6>
-
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de diferencia de conjuntos y devuelve un arreglo con el conjunto resultante.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">diference</span><span>(["a",r,"q"],[true,"as","r"])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> [ 'a', 'q' ]</span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> undefined </span>
                         </p>
 
                     </div>
                 </div>
                 <div class="method-container">
                     <p>
-                        <h6>ofConjunts.simetricDiference:</h6>
+                        <h6>forms.phone:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de diferencia simetrica de conjuntos y devuelve un arreglo con el conjunto resultante.
+                        El metodo form.phone, se encarga de validar si un numero telefonico ingresado tiene la longitd
+                        que el programa espera, recibe 2 numero un minimo y un maximo y el numero de telefono, retorna
+                        true si el numero esta el rango y si no retorna false
 
                     </p>
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">simetricDiference</span><span>( <br> [2,"bt","jak"],[21,"bt",true])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">phone</span><span>(3,5,1241)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: [ 2, 'jak', 21, true ]</span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> true </span>
                         </p>
 
                     </div>
+                    <p>Caso de ejemplo 2</p>
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">phone</span><span>(5,7,234)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> false </span>
+                        </p>
+
+                    </div>
+
                 </div>
 
                 <div class="method-container">
                     <p>
-                        <h6>ofConjunts.complement:</h6>
+                        <h6>forms.input:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de complemento de conjuntos y devuelve un arreglo con el conjunto resultante.
-
+                        Este metodo, se encarga de validar si un texto cumple con las condiciones deseadas por el
+                        programa, teniendo un rango de caracteres, y dando la posivilidad de prohibir caracteres, recibe
+                        4 parametros un minimo y un maximo de caracteres, el texto en cuestion y un string con los
+                        caracteres no permitidos (opcional), retorna true si lo ingresado cumple con todas las
+                        condiciones y false si no es asi
                     </p>
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">complement</span><span>( <br> [1,"cd",true,"a"],["f",true,"ai",false])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">input</span><span>(3,9,"hellotxt")</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: [ 1, 'cd', 'a' ]</span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> true </span>
                         </p>
 
                     </div>
+                    <p>Caso de ejemplo 2 </p>
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">forms</span><span>.</span><span
+                                    class="method">input</span><span>(3,6,"hellotxt","x")</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> false </span>
+                        </p>
+
+                    </div>
+
                 </div>
 
+                <p>
+                    <h6>forms.passaword:</h6>
 
+                    Este metodo se encarga de validar si una contraseña ingresada
+                    cumple con las condiciones estandares de seguirdad, es decir que incluya al menos un numero, una
+                    letra mayuscula y una minuscula, ademas tiene una funcion para validar que la contraseña tenga una
+                    cantidad minima de caractereres (opcional), retorna true si las condiciones se cumplen y si no
+                    retorna false
 
-            </article>
+                </p>
 
-        </section>
+                <div class="coding">
+                    <p>
+                        <span class="keyword">console</span><span>.</span><span class="method2">log</span><span>(<span
+                                class="keyword">forms</span><span>.</span><span
+                                class="method">passaword</span><span>("brayanA23")</span>)</span>
+                        <br>
+                        <span class="puntuation">//La salida por consola seria: <br> >>> true </span>
+                    </p>
 
-        <footer>
+                </div>
+                <p>Caso de ejemplo 2</p>
 
-            <p>Copyright © Actualización 2021 Brayan Puentes Ruiz. Derechos Reservados. <br>
-                Easy Tolls Js V1.0 </p>
+                <div class="coding">
+                    <p>
+                        <span class="keyword">console</span><span>.</span><span class="method2">log</span><span>(<span
+                                class="keyword">forms</span><span>.</span><span
+                                class="method">passaword</span><span>("qwa2asA",9)</span>)</span>
+                        <br>
+                        <span class="puntuation">//La salida por consola seria: <br> >>> false </span>
+                    </p>
 
-        </footer>
+                </div>
+
+            </div>
+    </article>
+
+    </section>
+
+    <footer>
+
+        <p>Copyright © Actualización 2021 Brayan Puentes Ruiz. Derechos Reservados. <br>
+            Easy Tolls Js V1.0 </p>
+
+    </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

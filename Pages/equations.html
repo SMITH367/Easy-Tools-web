@@ -20,14 +20,14 @@
     <div class="container">
 
         <header class="header">
-           
 
-                <div class="icon">
 
-                     <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
+            <div class="icon">
 
-                </div>
-           
+                <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
+
+            </div>
+
             <p class="init">Easy Tools JS</p>
 
             <nav class="header-nav">
@@ -53,7 +53,7 @@
 
         <a href="#" id="js_up" class="to-top">
 
-            <i class="fa fa-rocket" aria-hidden="true">   ^   </i>
+            <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
         </a>
 
         <section class="main">
@@ -127,9 +127,89 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto </h2>
-                <p></p>
+                <h2>El objeto equations </h2>
+                <p>El objeto equations es una herramienta para el calculo de equaciones matematicas dentro de los numero
+                    reales de primer y segundo grado, de la forma estandar por ejemplo ax + b = c o ax2 - bx + c = 0
+                </p>
                 <h3>Metodos</h3>
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>equations.simple:</h6>
+
+                        este metodo, recibe como parametros 3 numeros referentes a el valor de a dentro de la equacion,
+                        es decir quien tiene la x, el signo en forma de string (aritmeticos), el valor de b y el valor
+                        de c que es el
+                        que esta despues de la igualdad.
+                    </p>
+
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="keyword">equations</span><span>.</span><span
+                                    class="method">simple</span><span>(3,"+",8,5)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> -1 </span>
+                        </p>
+
+                    </div>
+
+                    <p>Caso de ejemplo 2</p>
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="keyword">equations</span><span>.</span><span
+                                    class="method">simple</span><span>(9,"/",3,12)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> 4 </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="method-container">
+                    <p>
+                        <h6>equations.cuadratic:</h6>
+
+                        este metodo, recibe como parametros 3 numeros referentes a los valores de la equacion, el valor
+                        de a, el valor de b y el valor
+                        de c y resuelve la equacion por formula general, muestra los resultados si es que estos son numeros reales, si no
+                        muestra que el resultado no es un numero real.
+
+                    </p>
+
+
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="keyword">equations</span><span>.</span><span
+                                    class="method">cuadratic</span><span>(-4,12,3)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> [ -0.2320, 3.2320 ] </span>
+                        </p>
+
+                    </div>
+                    <p>Caso de ejemplo 2</p>
+                    <div class="coding">
+                        <p>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="keyword">equations</span><span>.</span><span
+                                    class="method">cuadratic</span><span>(9,2,4)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> "is not a real number" </span>
+                        </p>
+
+                    </div>
+                </div>
             </article>
 
         </section>
