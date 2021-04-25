@@ -127,136 +127,89 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto statistic </h2>
-                <p>El objeto statistic es un conjunto de elementos para calcular las distintas medidas estadisticas en
-                    base a datos ordenados los cuales se envian en forma de arraglo </p>
-                <h3>Metodos</h3>
+                <h2>Los metodos de ordenamiento </h2>
+                <p> Debido a que las estructuras de datos son utilizadas para almacenar información, para poder
+                    recuperar esa información de manera eficiente es deseable que aquella esté ordenada. Existen varios
+                    métodos para ordenar arrays. Easy Tools JS Cuenta con los
+                    metodos quickSort y bubbleSort </p>
+
 
                 <div class="method-container">
-                    <p>
-                        <h6>statistic.media:</h6>
+                    <h3 id="quickSort">quickSort:</h3>
 
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula la
-                            media estadistica de estos
 
-                    </p>
+                    <p>Este metodo nos a ordenar la informacion de un array de manera rapida y es el mas eficiente que
+                        existe, aqui se maneja como una funcion, de la siguiente forma</p>
+                    <div class="coding">
+                        <p>
+                            <span class="puntuation">// Crearemos un array de pruebas</span> <br>
+                            <span class="keyword">let</span> <span>array = [2,98,123,1];</span> <br>
+                            <span class="puntuation">// Procedemos a orderlo con quickSort</span> <br>
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span
+                                    class="method">quickSort</span><span>(array)</span>)</span>
+                            <br>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> [1,2,98,123] </span>
+                        </p>
+                    </div>
+                    <br>
+                    <p>Tambien funciona para strings, su ordenamiento seria alfabetico</p>
 
                     <div class="coding">
                         <p>
+                            <span class="puntuation">// Crearemos un array de pruebas</span> <br>
+                            <span class="keyword">let</span> <span>array = ["ab","ja","cat"];</span> <br>
+                            <span class="puntuation">// Procedemos a orderlo con quickSort</span> <br>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">media</span><span>([3,5,67,45])</span>)</span>
+                                    class="method">quickSort</span><span>(array)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 30 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>>[ 'ab', 'cat', 'ja' ]
+                            </span>
                         </p>
-
                     </div>
                 </div>
-
+<br>
                 <div class="method-container">
-                    <p>
-                        <h6>statistic.average:</h6>
 
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula la
-                            promedio estadistico de dichos datos.
+                    <h3 id="bubbleSort">bubbleSort:</h3>
 
-                    </p>
 
+                    <p>Este metodo nos a ordenar la informacion de un array con el metodo de la burbuja, es decir
+                        comparando el valor de un array con el siguiente y cambiando sus posiciones aqui se maneja como
+                        una funcion, de la siguiente forma</p>
                     <div class="coding">
                         <p>
+                            <span class="puntuation">// Crearemos un array de pruebas</span> <br>
+                            <span class="keyword">let</span> <span>array = [2,98,123,1];</span> <br> <br>
+                            <span class="puntuation">// Procedemos a orderlo con bubbleSort</span> <br>
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">average</span><span>([14,98,103])</span>)</span>
+                                    class="method">quickSort</span><span>(array)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 71.66 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> [1,2,98,123] </span>
                         </p>
-
                     </div>
-                </div>
-                <div class="method-container">
-                    <p>
-                        <h6>statistic.mediana:</h6>
-
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula la
-                            mediana estadistica de dichos datos.
-
-                    </p>
+                    <br>
+                    <p>Tambien funciona para strings, su ordenamiento seria alfabetico</p>
 
                     <div class="coding">
                         <p>
+                            <span class="puntuation">// Crearemos un array de pruebas</span> <br>
+                            <span class="keyword">let</span> <span>array = ["ab","ja","cat"];</span> <br>
+                            <span class="puntuation">// Procedemos a orderlo con bubbleSort</span> <br>
+
+
+
+
+
                             <span class="keyword">console</span><span>.</span><span
                                 class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">mediana</span><span>([9,11,5,12])</span>)</span>
+                                    class="method">quickSort</span><span>(array)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 10 </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>>[ 'ab', 'cat', 'ja' ]
+                            </span>
                         </p>
-
-                    </div>
-                </div>
-                <div class="method-container">
-                    <p>
-                        <h6>statistic.range:</h6>
-
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula el
-                            rango estadistico de dichos datos.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">range</span><span>([12,89,8,17])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 81 </span>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="method-container">
-                    <p>
-                        <h6>statistic.variance:</h6>
-
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula la
-                            varianza de dichos datos.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">variance</span><span>([17,23,85,9])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 2611.6 </span>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="method-container">
-                    <p>
-                        <h6>statistic.standarDesviacion:</h6>
-
-                            Este metodo, recibe como parametro los datos agrupados en forma de arreglo y calcula la
-                            desviacion estandar de dichos datos.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">statistic</span><span>.</span><span
-                                    class="method">standarDesv</span><span>([9,76,12])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> 34.20 </span>
-                        </p>
-
                     </div>
                 </div>
             </article>

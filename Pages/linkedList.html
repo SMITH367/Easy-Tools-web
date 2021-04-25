@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+    <link rel="stylesheet" href="../Css/tokensJs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Sources/etjslogo.png" type="image/x-icon">
+    <title>Easy Tools JS</title>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+
+            <div class="icon">
+
+                <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
+
+            </div>
+
+            <p class="init">Easy Tools JS</p>
+
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+
+                    <a href="../index.html">
+                        <li class="header-nav-element">Inicio</li>
+                    </a>
+                    <a href="">
+                        <li class="header-nav-element">Descargar</li>
+                    </a>
+
+                    <a href="">
+                        <li class="header-nav-element">Sobre ET</li>
+                    </a>
+                    <a href="">
+                        <li class="header-nav-element">Metodos</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+
+        <a href="#" id="js_up" class="to-top">
+
+            <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
+        </a>
+
+        <section class="main">
+            <article class="nav-methods">
+
+                <a href="">
+                    <p>Metodos y funciones</p>
+                </a>
+
+                <ul class="methods">
+
+                    <a href="ofArray.html">
+                        <li class="methods-element">ofArray</li>
+                    </a>
+
+                    <a href="areaOf.html">
+                        <li class="methods-element">areaOf</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">perimeterOf</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">ofConjunts</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">statistic</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">geometryCart</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">equations</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">formTools</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">stack</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">queue</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">linkedList</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">generateString</li>
+                    </a>
+
+                    <a href="">
+                        <li class="methods-element">binarySearch</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">bubbleSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">quickSort</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">typeofMethod</li>
+                    </a>
+                    <a href="">
+                        <li class="methods-element">functionTest</li>
+                    </a>
+
+
+                </ul>
+            </article>
+            <article>
+                <h2>El objeto linkedList </h2>
+                <p> El objeto linkedList, es una simulacion de la estructura de datos "lista enlazada" es decir una
+                    forma de organizar los datos tal que esten relacionados por nodos, nos sirve
+                    para hacer la implementacion de esta forma de organizar datos</p>
+                <h3>Aplicacion</h3>
+
+
+                <div class="method-container">
+
+                    <div class="coding">
+                        <p>
+                            <p class="puntuation">//Lo primero que haremos sera crear nuestra lista enlazada
+                            </p>
+
+                            <p>
+                                <span class="keyword">const</span> <span>lista</span> = <span
+                                    class="method">linkedList;</span>
+                            </p>
+                        </p>
+
+
+                    </div>
+                    <br>
+                    <p>Lo siguiente sera empezar a manipular los metodos de nuestra lista</p>
+
+
+                    <div class="coding">
+                        <h6>El metodo prepend</h6>
+
+                        <p>
+                            <p class="puntuation">//Lo que haremos es enviar elementos a la cabeza de nuestra lista los
+                                elementos
+                            </p>
+
+                            <p>
+                                <span class="keyword">lista</span>.<span class="method">prepend</span>
+                                <span>("hola")</span>
+                                <br>
+                                <span class="keyword">lista</span>.<span class="method">prepend</span>
+                                <span>(3.14159)</span> <br>
+                                <span class="keyword">lista</span>.<span class="method">prepend</span>
+                                <span>("kepler")</span> <br>
+                                <span class="keyword">lista</span>.<span class="method">prepend</span>
+                                <span>("i")</span>
+                                <br>
+
+                            </p>
+                        </p>
+                        <h6>El metodo find</h6>
+
+                        <p>
+                            <p class="puntuation">//Lo que haremos es buscar un elemento dentro de la lista, nos
+                                mostrara el elemento y los que le siguen hasta llegar a la cabeza de la lista
+
+                            </p>
+
+
+                            <span class="keyword">console</span><span>.</span><span
+                                class="method2">log</span><span>(<span class="keyword">pila</span><span>.</span><span
+                                    class="method">find</span><span>("hola")</span>)</span>
+
+                            <span class="puntuation">//La salida por consola seria: <br> >>> LinkedListItem { value: 23,
+                                next: null }</span>
+                        </p>
+                        <p>
+                            <h6>El metodo deleteHead</h6>
+
+                            <p class="puntuation">// Lo que hace este metodo es eliminar la cabeza de la lista en este caso el elemento "i"
+    
+                            </p>
+                            <span class="keyword">cola</span>.<span class="method">delete</span><span>()</span>
+    
+                        </p>
+                        <p>
+                            <h6>El metodo viewElements</h6>
+
+                            <p class="puntuation">//Este metodo nos devuelve todos los elementos de la lista.</p>
+                            <p>
+                                <span class="keyword">console</span><span>.</span><span
+                                    class="method2">log</span><span>(<span class="keyword">lista</span><span>.</span><span
+                                        class="method">viewElements</span><span>()</span>)</span>
+                                <br>
+                                <span class="puntuation">//La salida por consola seria: <br> >>> 12 <br>
+                                   >>> 23  <br>
+
+                                    pues se
+                                    elimino el elemento "i" anteriormente. </span>
+                                <br>
+                        </p>
+
+                        
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+        </section>
+
+        <footer>
+
+            <p>Copyright © Actualización 2021 Brayan Puentes Ruiz. Derechos Reservados. <br>
+                Easy Tolls Js V1.0 </p>
+
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+
+</html>
