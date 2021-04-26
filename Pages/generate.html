@@ -20,14 +20,14 @@
     <div class="container">
 
         <header class="header">
+           
 
+                <div class="icon">
 
-            <div class="icon">
+                     <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
 
-                <a href="../index.html"><img src="../Sources/etjslogo.png" alt="" srcset="" width="50%"> </a>
-
-            </div>
-
+                </div>
+           
             <p class="init">Easy Tools JS</p>
 
             <nav class="header-nav">
@@ -43,18 +43,18 @@
                     <a href="">
                         <li class="header-nav-element">Sobre ET</li>
                     </a>
-                    <a href="">
+                    <a href="./methods.html">
                         <li class="header-nav-element">Metodos</li>
                     </a>
                 </ul>
             </nav>
         </header>
 
+
         <a href="#" id="js_up" class="to-top">
 
-            <i class="fa fa-rocket" aria-hidden="true"> ^ </i>
+            <i class="fa fa-rocket" aria-hidden="true">   ^   </i>
         </a>
-
 
         <section class="main">
             <article class="nav-methods">
@@ -77,7 +77,7 @@
                         <li class="methods-element">perimeterOf</li>
                     </a>
 
-                    <a href="">
+                    <a href="./ofConjunts.html">
                         <li class="methods-element">ofConjunts</li>
                     </a>
 
@@ -103,7 +103,7 @@
                     <a href="./linkedList.html">
                         <li class="methods-element">linkedList</li>
                     </a>
-                    <a href="./generate.html">
+                    <a href="">
                         <li class="methods-element">generate</li>
                     </a>
 
@@ -127,126 +127,98 @@
                 </ul>
             </article>
             <article>
-                <h2>El objeto ofConjunts </h2>
-                <p>Este objeto es un conjunto de herramientas para operar con conjuntos y hacer sus respectivas
-                    operaciones, manjenado los conjuntos en forma de arreglos</p>
+                <h2>El objeto generate</h2>
+                <p>El objeto generate es un conjunto de metodos para generar elementos o datos aleatorios, desde numeros hasta arrays</p>
                 <h3>Metodos</h3>
 
-
-
-                <div class="method-container">
+                  <div class="method-container">
                     <p>
-                        <h6>ofConjunts.union:</h6>
+                        <h6>generate.number:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de union de conjuntos y devuelve un arreglo con el conjunto resultante.
+                            este metodo, recibe como parametro un numero minimo y un numero maximo genera un numero aleatorio dentro de ese rango.
 
                     </p>
+
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">union</span><span>([2,"hd"],[true,"23",9])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">generate</span><span>.</span><span
+                                    class="method">number</span><span>(3,10)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> [2,"hd",true,"23",9] </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> 6 </span>
                         </p>
 
                     </div>
-                </div>
 
-
-
-                <div class="method-container">
+                     <div class="method-container">
                     <p>
-                        <h6>ofConjunts.intersection:</h6>
+                        <h6>generate.string:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de interseccion de conjuntos y devuelve un arreglo con el conjunto resultante.
+                            este metodo, recibe como parametro un numero un string con esa cantidad de caracteres.
 
                     </p>
+
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">union</span><span>([23,true,8],[true,8,"jaj"])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">generate</span><span>.</span><span
+                                    class="method">string</span><span>(6)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> [true,8] </span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> "awQzcv" </span>
                         </p>
 
                     </div>
-                </div>
+
 
                 <div class="method-container">
                     <p>
-                        <h6>ofConjunts.diference:</h6>
+                        <h6>generate.arrayN:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de diferencia de conjuntos y devuelve un arreglo con el conjunto resultante.
+                            este metodo, recibe como parametro un numero y genera un array con esa n cantidad de
+                            elementos los cuales son numeros aleatorios.
 
                     </p>
+
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">diference</span><span>(["a",r,"q"],[true,"as","r"])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">generate</span><span>.</span><span
+                                    class="method">arrayN</span><span>(4)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: <br> >>> [ 'a', 'q' ]</span>
+                            <span class="puntuation">//La salida por consola seria: <br>>>> [432,756,53,2345] </span>
                         </p>
 
                     </div>
+
                 </div>
                 <div class="method-container">
                     <p>
-                        <h6>ofConjunts.simetricDiference:</h6>
+                        <h6>generate.arrayS:</h6>
 
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de diferencia simetrica de conjuntos y devuelve un arreglo con el conjunto resultante.
+                            este metodo, recibe como parametro un numero y genera un array con esa n cantidad de
+                            elementos los cuales son cadenas de caracteres.
 
                     </p>
+
 
                     <div class="coding">
                         <p>
                             <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">simetricDiference</span><span>( <br> [2,"bt","jak"],[21,"bt",true])</span>)</span>
+                                class="method2">log</span><span>(<span class="keyword">generate</span><span>.</span><span
+                                    class="method">arrayS</span><span>(5)</span>)</span>
                             <br>
-                            <span class="puntuation">//La salida por consola seria: >>> [ 2, 'jak', 21, true ]</span>
+                            <span class="puntuation">//La salida por consola seria: <br> >>> ["Pklsdma",'a1', '2', 'MUi5ngdT', 'KdsACw'] </span>
                         </p>
 
                     </div>
-                </div>
 
-                <div class="method-container">
-                    <p>
-                        <h6>ofConjunts.complement:</h6>
-
-                            Este metodo, recibe como parametros 2 conjuntos a y b representados por 2 arreglos, realiza
-                            la operacion de complemento de conjuntos y devuelve un arreglo con el conjunto resultante.
-
-                    </p>
-
-                    <div class="coding">
-                        <p>
-                            <span class="keyword">console</span><span>.</span><span
-                                class="method2">log</span><span>(<span
-                                    class="keyword">ofConjunts</span><span>.</span><span
-                                    class="method">complement</span><span>( <br> [1,"cd",true,"a"],["f",true,"ai",false])</span>)</span>
-                            <br>
-                            <span class="puntuation">//La salida por consola seria: >>> [ 1, 'cd', 'a' ]</span>
-                        </p>
-
-                    </div>
                 </div>
 
 
-
+                </div>
             </article>
 
         </section>
