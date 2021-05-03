@@ -13,6 +13,8 @@
         font-style: oblique;
         font-size: larger;
         font-kerning: inherit;
+        font-weight: bold;
+            font-size: x-large;
     }
 
     .hero img {
@@ -26,6 +28,7 @@
     .methods-element {
         display: none;
     }
+   
 
     .about-et {
         width: 99%;
