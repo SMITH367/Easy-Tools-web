@@ -1,0 +1,38 @@
+.methods2{
+
+    text-align: center;
+    list-style: none;
+    background: rgb(248, 246, 246);
+    
+   
+}
+
+.methods-element2{
+
+
+    font-variant: normal;
+    font-size: larger;
+    font-style: italic;
+    display:inline-block;
+    font-weight: bold;
+}
+.method-cont{
+
+   padding:1em;
+   margin-right: 2em;
+    border: solid#20c997 3px;
+    border-radius: 10px;
+}
+.method-cont p{
+    background: rgb(216, 214, 214);
+}
+.met{
+    font-display: 1rem;
+    padding:1em;
+    font-weight:bolder;
+}
+
+.center{
+    
+    text-align: center;
+}
