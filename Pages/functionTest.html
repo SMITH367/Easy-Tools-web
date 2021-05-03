@@ -40,7 +40,7 @@
                         <li class="header-nav-element">Descargar</li>
                     </a>
 
-                   
+
                     <a href="./methods.html">
                         <li class="header-nav-element">Metodos</li>
                     </a>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="method-container">
 
-                    <p>Para aplciar functionTest se necesita hacer el llamado y esta recibe 4 parametros, 1) el numero
+                    <p>Para aplicar functionTest se necesita hacer el llamado y esta recibe 4 parametros, 1) el numero
                         de parametros de la funcion a probar, el nombre de la funcion, los parametros de prueba y el
                         restuado esperado, la funcion retornara true si el resultado de todos los casos de prueba
                         conicide con el resultado de todos los parametros esperados, si no retornara false.</p>
@@ -280,8 +280,81 @@
 
 
                     </div>
-                </div>
-              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="method-container">
+
+                        <h3>La funcion confirmType</h3>
+
+                        <p>
+                            Esta funcion se encarga de validar si los tipos ingresados corresponden a los esperados para
+                            que una funcion se ejecute de manera correcta, recibe como parametros 2 arrays, uno con los
+                            parametros a testear y otro con los tipos esperados, Si los tipos de los parametros recibidos corresponden a los
+                            esperados retornara true, como en este caso, de lo contrario lanzara un error
+                            por consola funciona de la siguiente forma
+                        </p>
+                        <div class="coding">
+                            <p>
+
+                                <p class="puntuation">//Supongamos que tenemos una funcion suma y necesitamos comprobar
+                                    que efectivamente los parametros recibidos sean de tipo "number"<br>
+                                </p>
+
+                                <p>
+                                    <span class="keyword">const</span> <span class="method">add</span> =
+                                    <span>(n1,n2)</span> <span class="method2">=></span> <span>{
+                                        <span class="keyword">console</span><span>.</span><span
+                                            class="method2">log</span><span>(<span
+                                                class="method">confirmType</span>([2,5],["number","number"])</span>)</span>
+                                    <br>
+                                    <span class="keyword">return</span> <span>n1 <span class="method2">+</span>
+                                        n2</span>
+                                    <br>
+                                    }
+                                    <br>
+
+                                    </span>
+                                    <span class="puntuation">//La salida por consola seria: <br> >>> true </span>
+                                </p>
+
+                            </p>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
             </article>
 
         </section>
