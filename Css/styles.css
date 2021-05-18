@@ -3,16 +3,22 @@
     padding: 0;
     
 }
+
 body{
-    background-color: rgb(240, 236, 236);
+ 
     width:100%; 
     margin: 0;
     padding: 0;
 }
+h1{
+    text-transform: uppercase;
+}
+
 .container {
 
     width:99%;
     height:99%;
+    background: rgb(255, 255, 255);
 
 }
 .center{
@@ -20,7 +26,7 @@ body{
 }
 .to-top{
    
-    background: #00974B;
+    background: #00d9ff;
     border: thin solid #fff;
     border-radius: 10px;
     position: fixed;
@@ -48,7 +54,8 @@ body{
     justify-content: space-between;
     grid-row: inherit;
     grid-row: 1;
-    background: rgb(133, 255, 174);
+    background: rgb(126, 126, 126);
+    border: solid 1px;
   
      
     
@@ -62,6 +69,7 @@ body{
     justify-content: baseline;
     list-style: none;
 }
+
 
 .header-nav-list {
     display: flex;
@@ -80,20 +88,58 @@ body{
     padding: 4px;
     margin: 4px;
     list-style: none;
-
-
-
     /* 
     Stiles
     */
 
-    border: 2.2px solid blue;
-    background-color: aqua;
+    border:solid rgb(6, 184, 255);
+   color:#fff;
     border-radius: 5px;
 }
-.nav-methods{
-    background: rgb(211, 250, 255);
+.header-nav-list a :hover{
+    padding:7px;
+    transition: all .3s;
+    color:#00ffff;
+    text-transform: uppercase;
+}
 
+.nav-methods{
+    background: #50545a;
+    text-align: center;
+    list-style: none;
+    
+
+}
+.nav-methods li{
+    list-style: none;
+
+}
+.nav-methods a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-methods a p{
+    border: solid  rgb(0, 238, 255) 3px; 
+    border-radius: 8px;
+    text-transform: uppercase;
+    
+}
+
+.nav-methods a p{
+    background: rgb(0, 252, 231);
+    color:rgb(0, 0, 0);
+    padding:10px;
+    
+
+}
+
+.methods a :hover{
+ 
+    border:solid rgb(36, 112, 255) 2px;
+    color:#00d9ff;
+    border-radius:15px;
+    text-transform: capitalize;
+   
 }
 
 .hero img {
@@ -122,12 +168,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-
+  
     
 }
 
 .download-github img {
-    height: 200px;
+    height: 190px;
+  
 
 }
 
@@ -143,9 +190,12 @@ body{
     padding:20px; 
 }
 
+footer{
+    background: #232a34;
+}
 
 footer p{
-    background: aqua;
+   color:rgb(214, 214, 214);
     margin:1em;
     padding:2em;
 }

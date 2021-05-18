@@ -1,9 +1,8 @@
+@media (max-width: 769px) {
 
-@media (max-width: 700px) {
-   
 
-    
-   
+
+
     .icon {
         display: none;
     }
@@ -15,6 +14,7 @@
         font-kerning: inherit;
         font-weight: bold;
         font-size: x-large;
+        color:rgb(255, 255, 255);
     }
 
     .hero img {
@@ -23,12 +23,29 @@
 
     .methods {
         display: none;
+
     }
 
-    .methods-element {
+    .methods-element a {
+       
         display: none;
     }
-   
+    .nav-methods {
+      display: none;
+    }
+
+
+    .nav-methods a{
+        color:#000;
+        font-weight: bolder;
+        text-transform:uppercase;
+        font-size: 1.2em;
+    }
+
+    .nav-methods a :hover {
+        padding: 3px;
+    }
+
 
     .about-et {
         width: 99%;
